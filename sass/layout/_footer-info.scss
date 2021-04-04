@@ -1,0 +1,42 @@
+.footer-address {
+  margin-top: 20px;
+}
+
+.footer-contacts {
+  margin-top: 9px;
+}
+
+.footer {
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+
+  .footer-address {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .footer-contact {
+    color: var(--footer-contacts-color);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

@@ -1,0 +1,149 @@
+.modal-title {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--title-text-color);
+}
+
+.form-input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding: 12px 0px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms var(--standart-animation);
+
+  &:focus {
+    border-color: var(--accent-color);
+
+    & ~ .icon {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.comment-input {
+  position: relative;
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms var(--standart-animation);
+  font-size: 12px;
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.form-label {
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.comment-label {
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  transition: transform 250ms var(--standart-animation);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* Modal Icons */
+
+.policy-agreement {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  margin-top: 10px;
+}
+
+.icon {
+  position: absolute;
+  top: 70%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--title-text-color);
+  fill: currentColor;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.policy-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  background-color: transparent;
+  transition: all 250ms var(--standart-animation);
+
+  .checkbox:checked ~ & {
+    border-color: transparent;
+    background-color: var(--accent-color);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .checkbox:focus + & {
+    outline: 2px solid var(--accent-color);
+  }
+}
+
+.policy-link {
+  display: inline-block;
+  position: relative;
+  color: var(--accent-color);
+  margin-left: 4px;
+}
+
+.modal .btn.primary {
+  margin-top: 20px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
