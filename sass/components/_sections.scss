@@ -1,0 +1,21 @@
+.section {
+  &__features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__duties {
+    padding-bottom: 94px;
+  }
+
+  &__team {
+    background-color: var(--secondary-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -2,11 +2,11 @@
   display: flex;
   margin-left: 93px;
 
-  .nav-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
   }
 
-  .nav-link {
+  &__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -26,7 +26,7 @@
     }
   }
 
-  .nav-link.current {
+  &__link.current {
     color: var(--accent-color);
 
     &::after {

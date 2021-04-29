@@ -13,18 +13,18 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+
   .btn.primary {
     text-decoration: none;
   }
-}
-
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  color: var(--white-color);
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
 }

@@ -8,15 +8,20 @@
   }
 }
 
-.page-header-contacts {
+.header-contacts {
   display: flex;
   margin-left: auto;
 
-  & .contacts-item:not(:last-child) {
-    margin-right: 50px;
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
-  & .header-contacts {
+  &__link {
     display: inline-flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -34,5 +39,10 @@
       color: var(--accent-color);
       fill: var(--accent-color);
     }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
   }
 }
