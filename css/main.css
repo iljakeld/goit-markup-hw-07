@@ -204,6 +204,11 @@ img {
   padding-bottom: 94px;
 }
 
+.section__portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -213,7 +218,7 @@ img {
   margin-top: 0px;
 }
 
-.social {
+.social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,7 +231,15 @@ img {
   margin-top: 16px;
 }
 
-.social-link {
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__logo {
+  fill: currentColor;
+}
+
+.social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,32 +258,24 @@ img {
   transition: color 250ms var(--standart-animation), background-color 250ms var(--standart-animation);
 }
 
-.social-link:hover, .social-link:focus {
+.social__link:hover, .social__link:focus {
   color: #fff;
   background-color: var(--accent-color);
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.link-logo {
-  fill: currentColor;
-}
-
-.footer-social {
+.footer__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.subscribe-container .social-link {
+.subscribe-container .social__link {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
-.subscribe-container .social-link:hover, .subscribe-container .social-link:focus {
+.subscribe-container .social__link:hover, .subscribe-container .social__link:focus {
   background-color: var(--accent-color);
 }
 
